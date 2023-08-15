@@ -17,6 +17,7 @@ class _SearchScreenState extends State<SearchScreen> {
           child: Column(
             children: [
               TextFormField(
+                style: TextStyle(color: Colors.blue),
                 onChanged: (val) {
                   setState(() {
                     inputText = val;
@@ -55,7 +56,8 @@ class _SearchScreenState extends State<SearchScreen> {
                             return Card(
                               elevation: 5,
                               child: ListTile(
-                                title: Text(data['product-name']),
+                                title: Text(data['product-name'], style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 25, color: Colors.blue),
+                                ),
                                 leading: Image.network(data['product-img'][0]),
                               ),
                             );

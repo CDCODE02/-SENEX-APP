@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget fetchData (String collectionName){
@@ -28,7 +27,7 @@ Widget fetchData (String collectionName){
             return Card(
               elevation: 5,
               child: ListTile(
-                leading: Text(_documentSnapshot['name']),
+                leading: Text(_documentSnapshot['name'],style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 25, color: Colors.blue), ),
                 title: Text(
                   "\$ ${_documentSnapshot['price']}",
                   style: TextStyle(

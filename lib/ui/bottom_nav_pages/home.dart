@@ -150,9 +150,20 @@ class _HomeState extends State<Home> {
                                         child: Image.network(
                                           _products[index]["product-img"][0],
                                         ))),
-                                Text("${_products[index]["product-name"]}"),
                                 Text(
-                                    _products[index]["product-price"].toString()),
+                                    _products[index]["product-name"],
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.blue),
+                                ),
+                                Text("\$ ${_products[index]["product-price"].toString()}",
+                                  style: TextStyle(
+                                          fontWeight: FontWeight.bold, fontSize: 30, color: Colors.blue),
+                                ),
+
+                                // Text(
+                                //   widget._product['product-name'],
+                                //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.blue),
+                                // ),
+
                               ],
                             ),
                           ),

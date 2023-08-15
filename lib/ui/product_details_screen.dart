@@ -124,16 +124,18 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
                 Text(
                   widget._product['product-name'],
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.blue),
                 ),
-                Text(widget._product['product-description']),
+                Text(widget._product['product-description'],
+                  style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black38),
+                ),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "\$ ${widget._product['product-price'].toString()}",
                   style: TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 30, color: Colors.red),
+                      fontWeight: FontWeight.bold, fontSize: 30, color: Colors.blue),
                 ),
                 Divider(),
                 SizedBox(
